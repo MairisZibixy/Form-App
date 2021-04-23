@@ -1,6 +1,15 @@
 <!DOCTYPE html>
-<form action="https://bootcamp-firstpage.000webhostapp.com/app/public/api.php" onsubmit="postSubmit.bind(this)(event, displayAvatar)">
-    <select name="fields[]" id="" multiple>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Learning how to make form</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="https://bootcamp-firstpage.000webhostapp.com/app/public/api.php" onsubmit="postSubmit.bind(this)(event, displayAvatar)">
+            <select name="fields[]" id="" multiple>
         <option value="firstname">Firstname</option>
         <option value="lastname">Lastname</option>
         <option value="age">Age</option>
@@ -9,12 +18,16 @@
         <option value="location">Location</option>
         <option value="telephone">Telephone</option>
     </select>
-    <input type="submit" value="request">
-</form>
+            <input type="submit" value="request">
+        </form>
 
-<div id="app">
+        <div id="app">
 
-</div>
+        </div>
 
-<script src="request.js"></script>
-<script src="script.js"></script>
+        <script src="request.js"></script>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
